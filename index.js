@@ -14,7 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json()); // read json body
 
 app.use(cors({
-    origin: ["http://localhost:3000" ,"http://localhost:5173","https://test-font-end.vercel.app"],
+  origin:['*'],
+    // origin: ["http://localhost:3000" ,"http://localhost:5173","https://test-font-end.vercel.app"],
     credentials: true, // necessary for cookies, authorization headers, etc.
   }))
 
